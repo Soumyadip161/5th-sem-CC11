@@ -1,0 +1,19 @@
+package com.bean;
+
+public class clientside {
+	 static void register_student(ServerSideApplication s) {
+		System.out.println(s.get_roll());
+		
+	}
+
+	public static void main(String args[])
+	{
+		ServerSideApplication s= new ServerSideApplication();
+		s.set_roll(701);
+		s.set_course("1001");
+		s.set_id(1256);
+		s.set_name("SDG");
+		register_student(s);
+		
+	}
+}
