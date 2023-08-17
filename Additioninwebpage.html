@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addition of two numbers</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>1st number:</td>
+            <td><input type="text" id="1stnum" name="input"></td>
+        </tr>
+        <tr>
+            <td>2nd number:</td>
+            <td><input type="text" id="2ndnum" name="input"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" value="Add" id="button" onclick="Addition()"></td>
+        </tr>
+    </table>
+    <p id="result"></p>
+    <script>
+        function Addition() {
+            var a,b,c;
+            if (document.getElementById("1stnum").value=="" ) {
+                alert("Please enter a number");
+                document.getElementById("1stnum").focus();
+                document.getElementById("1stnum").value="";
+            }
+            else if (isNaN(document.getElementById("1stnum").value)) {
+                alert("1st value is not a number");
+                document.getElementById("1stnum").focus();
+                document.getElementById("1stnum").value="";
+                }
+            else if(document.getElementById("2ndnum").value==""){
+                alert("2nd field is empty ");
+                document.getElementById("2ndnum").focus();
+                document.getElementById("2ndnum").value="";
+            }
+            else if(isNaN(document.getElementById("2ndnum").value)){
+                alert("2nd value is not a number");
+                document.getElementById("2ndnum").focus();
+                document.getElementById("2ndnum").value="";
+            }
+            else{
+             a=Number(document.getElementById("1stnum").value);
+            b=Number(document.getElementById("2ndnum").value);
+            c=a+b;
+            document.getElementById("result").innerHTML="Sum is :"+c;
+                 
+            }
+        }            
+        
+    </script>
+</body>
+</html>
