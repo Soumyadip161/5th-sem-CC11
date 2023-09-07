@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armstrong</title>
+</head>
+<body>
+    
+    <p>Enter a number</p>
+    <input type="text" id="number">
+    <button onclick="armstrong_check()">Check!</button>
+    
+    <p id="result"></p>
+    <script>
+        function armstrong_check()
+        {
+            let num=Number(document.getElementById("number").value);
+            let num1=num;
+            let sum=0;
+            while(num > 0)
+            {
+                p=num%10;
+                sum=sum+ (p**3);
+                num= parseInt(num/10);
+            }
+            if(sum==num1)
+            {
+                document.getElementById("result").innerHTML="This is an Armstrong number";
+            }
+            else{
+                document.getElementById("result").innerHTML="This is not an Armstrong number";
+            }
+        }
+    </script>
+</body>
+</html>

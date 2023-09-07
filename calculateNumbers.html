@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CalculatingNumbers</title>
+</head>
+<body>
+    <h1>Welcome to number calculating program!!</h1>
+    <button onclick="action()">Click To Start</button>
+    <p id="result"></p>
+    <script>
+        function action() {
+            let n=parseInt(prompt("Enter the total numbers you want to enter"));
+            let flag=1;
+            let i=0;
+            let number;
+            let positive=0;
+            let negetive=0;
+            let zero=0;
+            while(i<n)
+            {
+               number=parseInt(prompt("Enter the number"));
+                    while(isNaN(number))
+                    {
+                        number=parseInt(prompt("Enter the number"));
+                    }
+                
+                if(number>0)
+                        {
+                            positive++;
+                        }
+                        else if(number<0)
+                        {
+                            negetive++;
+                        }
+                        else{
+                            zero++;
+                        }
+                i++;
+            }
+            document.getElementById("result").innerHTML="Number of Positive numbers = "+positive+"\n"+"Number of negetive numbers = "+negetive+"\n"+"Number of zeros = "+zero;
+        }
+    </script>
+</body>
+</html>
