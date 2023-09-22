@@ -1,0 +1,54 @@
+package bean.com;
+
+public class bankserver implements java.io.Serializable {
+	private String Userid;
+	private String Username;
+	private long Account_no;
+	private String Password;
+	double Balance;
+	public String get_Userid()
+	{
+		return Userid;
+	}
+	public String get_Username()
+	{
+		return Username;
+	}
+	public String get_Password()
+	{
+		return Password;
+	}
+	public long get_Account_no()
+	{
+		return Account_no;
+	}
+	public double get_Balance()
+	{
+		return Balance;
+	}
+	public void set_Username(String user)
+	{
+		Username=user;
+	}
+	public void set_Userid(String uid)
+	{
+		Userid=uid;
+	}
+	public void set_Password(String pw) 
+	{
+		Password=pw;
+	}
+	public void set_Account_no(long acno)
+	{
+		Account_no=acno;
+	}
+	public void set_Balance(double bal)
+	{
+		Balance=bal;
+	}
+	
+		
+}
+
+
+Bank Server
