@@ -49,6 +49,3 @@ public class bankserver implements java.io.Serializable {
 	
 		
 }
-
-
-Bank Server
