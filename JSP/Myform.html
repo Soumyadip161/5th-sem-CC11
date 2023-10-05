@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form</title>
+    <style>
+        .Container{
+            width: 40%;
+            border: 1px solid black;
+            margin: auto;
+            padding: 20px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Form</h1>
+    <div class="Container">
+    <form action="action.jsp" method="post">
+        <table>
+            <tr>
+                <td>Enter Your Name:</td>
+                <td><input type="text" name="user_name" placeholder="Enter Here"></td>
+            </tr>
+            <tr>
+                <td>Enter Your Phone number:</td>
+                <td><input type="text" name="phone_number" placeholder="Enter Here"></td>
+            </tr>
+            <tr>
+                <td>Enter Your Address:</td>
+                <td><textarea name="address" rows="3" cols="30"></textarea></td>
+            </tr>
+            <tr>
+                <td style="text-align: center;"><button type="submit">Submit</button></td>
+                <td><button type="reset">Reset</button></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
