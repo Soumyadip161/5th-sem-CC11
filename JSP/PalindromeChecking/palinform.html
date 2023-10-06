@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <title>PALINDRONME Number Checking</title>
+  </head>
+  <body>
+    <h1>Palindrome Number checking Webpage</h1>
+    <form action="action.jsp" method="post" onsubmit="return validate()">
+      <label>Enter String:</label>
+      <input type="text" id="string" name="string" placeholder="Enter here">
+      <button type="submit">SUBMIT!</button>
+    </form>
+    <script>
+      function validate()
+        {
+          number=document.getElementById("string").value;
+            if(number="")
+          {
+            alert("please enter a number to proceed!!");
+            document.getElementById("string").value="";
+            document.getElementById("string").focus();
+            return false;
+          }
+          else if(isNaN(number)||number<0)
+          {
+            alert("Number entered is Invalid!!");
+            document.getElementById("string").focus();
+            return false;
+          }
+          else
+          {
+            return true;
+          }
+    </script>
+  </body>
+</html>
